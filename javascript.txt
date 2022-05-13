@@ -50,4 +50,15 @@ toFixed(2) - duas casas decimais
 1450.toFixed(2) -> 1450.00
 1450.toFixed(2).replace('.',',') -> 1450,00
 
+Para exibir o R$ na frente:
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
 
+toLocaleString - Para uma regiao
+'pt-BR' - a regiao solicitada
+currency - moeda
+'BRL' - tipo de moeda
+
+
+-------------------------------------------
+
+Aula: Operadores

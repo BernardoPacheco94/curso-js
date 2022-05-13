@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        var nome = window.prompt ('Digita teu nome aí nóia:')
-        document.write(`${nome.toUpperCase()}, Contando os espaços, teu nome tem ${nome.length} caracteres`)
+        /* var nome = window.prompt ('Digita teu nome aí nóia:')
+           document.write(`${nome.toUpperCase()}, Contando os espaços, teu nome tem ${nome.length} caracteres`)
+           */
+
+        var nome = prompt('Qual seu nome?')
+        var salario = Number( prompt("Informe seu salàrio"))
+
+
+        document.write(` ${nome.toUpperCase()}, o salário informado, convertido para nossa moeda é: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
+        )
     </script>
 </body>
+
 </html>
