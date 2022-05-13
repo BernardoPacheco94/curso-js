@@ -1,0 +1,11 @@
+Recomendações Bibliograficas
+*Javascript o guia definitivo - David Flanagan
+*Javascript - guia do programador - Maurício Samy Silva
+*Guia de referencia mozila (https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+*Guia de referencia Ecma (https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+
+-------------------------------------------
+
+Aula tipo de variáveis:
+Declaração feita com 'var', não é especificado o tipo da varável, pois o javascript se adapta ao tipo de variável.
+
