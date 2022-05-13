@@ -9,3 +9,45 @@ Recomendações Bibliograficas
 Aula tipo de variáveis:
 Declaração feita com 'var', não é especificado o tipo da varável, pois o javascript se adapta ao tipo de variável.
 
+
+-number: Números em geral (int, float, real)
+	-Infinity
+	-NaN (not a number)
+-string: cadeias de caracteres
+-true, false: booleanos
+-object: Objeto, POO
+	-Array
+-function
+
+
+TYPEOF: exibe o tipo da variável
+
+-------------------------------------------
+
+Aula: Tratamento de dados
+
+VAR nome = prompt("Qual teu nome nóia?")
+alert (nome)
+Concatenação: '+'
+
+O prompt sempre retorna uma string. Se eu quiser um number preciso converter o dado. 
+Conversão para número
+Number.parseInt(n) 
+Number.parseFloat(n).
+Number(n)
+
+Conversão para string:
+n.toString()
+String(n)
+
+Template strings:
+Para usar as variaveis dentro de expressões/strings é usado a crase (`) e Place Holder -> ${}
+Ex:
+`O Aluno ${nome} de ${idade} anos tirou a nota ${nota}`
+
+Convsersão de numbers:
+toFixed(2) - duas casas decimais
+1450.toFixed(2) -> 1450.00
+1450.toFixed(2).replace('.',',') -> 1450,00
+
+

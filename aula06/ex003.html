@@ -22,11 +22,16 @@
     <h1>Olá Mundo</h1>
     <p>Início curso Javascript, aqui abaixo vai a tag &lt;script &gt; </p>
     <script>
-        //o 'window.' é opcional e o ; não é obrigatorio
-       /* window.alert("E aí nóia")
-        confirm("Tu é nóia?")*/
-        var nome = prompt("Qual teu nome nóia?")
-        alert('tmj '+nome.toUpperCase())
+        var n1 = Number(prompt('Informe um número')) //como o prompr retorna string, tem que converter o número.
+        var n2 = Number(prompt('Informe outro número'))
+        var res = (n1+n2) // se nao converter, vai ser concatenado aqui
+        alert(`A soma entre ${n1} e ${n2} é: ${res}!`)
+
+        /*
+        Conversão pra string:
+        String(res)
+        res.toString()
+        */
     </script>
 </body>
 </html>
