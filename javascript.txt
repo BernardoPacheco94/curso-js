@@ -62,3 +62,11 @@ currency - moeda
 -------------------------------------------
 
 Aula: Operadores
+
+Aritimeticos: (+, -, *, /, %, ** (expoenciação))
+
+Atribuição: var a = 5+2
+
+Relacionais: 
+Lógicos
+Ternário
