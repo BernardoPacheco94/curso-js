@@ -67,6 +67,16 @@ Aritimeticos: (+, -, *, /, %, ** (expoenciação))
 
 Atribuição: var a = 5+2
 
-Relacionais: 
-Lógicos
-Ternário
+Relacionais: (>, <, =, ==, !=)
+OBS: operador === (identco) verifica também o tipo de dado.
+
+Lógicos: (!, &&, ||)
+
+Ternário: (?, :)
+Há 3 blocos (operandos) -> teste ? true : false
+Ex: media >= 7 ? "Aprovado" : "Reprovado"
+
+-------------------------------------------
+
+Aula: Entendendo o DOM
+
