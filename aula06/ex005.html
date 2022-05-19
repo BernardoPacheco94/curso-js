@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        :root{
+            --cor0: #012030;
+            --cor1: #13678A;
+            --cor2: #45C4B0;
+            --cor3: #9AEBA3;
+            --cor4: #DAFDBA;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15pt;
+            background-color: var(--cor0);
+            color: var(--cor4);
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 id="primeiro_titulo">Inciando estudos de DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> (Document Object Model) em JavaScript</p>
+    <p>DOM é um conjunto de objetos que estão dentro do vanegador, com ele você acessa os documentos internos do site.</p>
+    <div id="msg">Clique nesse texto</div>
+    <br>
+    <script>
+        var negrito = document.getElementsByTagName('strong')[0]
+        window.document.writeln('O primeiro termo em negrito é: ' + negrito.innerText)
+
+        var d = window.document.getElementById('msg')
+        d.style.background = "#13678A"
+        d.style.display = "inline"
+
+        var titulo = document.querySelector('h1#primeiro_titulo')
+        titulo.style.color = "#9AEBA3"        
+
+    </script>
+</body>
+</html>

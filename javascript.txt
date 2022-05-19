@@ -80,3 +80,12 @@ Ex: media >= 7 ? "Aprovado" : "Reprovado"
 
 Aula: Entendendo o DOM
 
+DOM é um conjunto de objetos que estão dentro do vanegador, com ele você acessa os documentos internos do site.
+
+Árvore DOM:
+a árvore começa pela raíz, que no dom seria o 'window'. Windows é um objeto em que está todo o javascript.
+Alguns exemplos de objetos dentro do window: location, documento, history.
+Dentro do document tem o html, dentro do html há o head e o body...
+
+EX: https://www.todoespacoonline.com/w/wp-content/uploads/2014/05/Diagrama1.png
+
