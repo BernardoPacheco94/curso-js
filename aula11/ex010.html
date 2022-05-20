@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>VERIFICAÇÃO DE VELOCIDADE</h1>    
+    Velocidade Registrada: <input type="number" name="txt_vel" id="vel" style="width: 40px;"> Km/h 
+    <br>
+    <input type="button" value="CONFIRMAR VELOCIDADE" id="btn_enviar" onclick="enviar()">
+    <div id="msg"></div>
+
+
+    <script>
+        function enviar(){
+        var name_vel = document.getElementById('vel')
+        var vel = Number(name_vel.value)
+        var msg = document.getElementById('msg')
+
+        msg.innerText = `Velocidade: ${vel} Km/h`
+        
+        if(vel > 60){
+            alert(`${vel} Km/h excede o limite de velocidade, multa registrada`)
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    Informe um país: <br>
+    <input type="text" id="id_pais">    
+    <input type="button" value="OK" onclick="verificar()">
+
+
+    <script>
+        function verificar(){
+            var pais = document.querySelector('input#id_pais')
+
+            if(pais.value.toUpperCase() != 'BRASIL'){
+                alert('Estrangeiro')
+            }else{
+                alert('Brasileiro')                
+            }
+        }
+
+    </script>
+
+</body>
+</html>
