@@ -95,3 +95,9 @@ Por ID: getElementsById()
 Por Nome: getElementsByName()[]
 Por Classe: getElementsByClassName()
 Por Seletor: querySelector()
+
+-------------------------------------------
+
+Aula: Eventos DOM
+
+Eventos de javascript disponíveis em: https://developer.mozilla.org/pt-BR/docs/Web/Events
