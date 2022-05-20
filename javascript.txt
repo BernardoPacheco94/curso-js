@@ -89,3 +89,9 @@ Dentro do document tem o html, dentro do html há o head e o body...
 
 EX: https://www.todoespacoonline.com/w/wp-content/uploads/2014/05/Diagrama1.png
 
+Seleção de objetos:
+Por Marca: getElementsByTagName()
+Por ID: getElementsById()
+Por Nome: getElementsByName()[]
+Por Classe: getElementsByClassName()
+Por Seletor: querySelector()
