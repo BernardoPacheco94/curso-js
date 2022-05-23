@@ -20,6 +20,8 @@ Declaração feita com 'var', não é especificado o tipo da varável, pois o ja
 -function
 
 
+
+
 TYPEOF: exibe o tipo da variável
 
 -------------------------------------------
@@ -101,3 +103,11 @@ Por Seletor: querySelector()
 Aula: Eventos DOM
 
 Eventos de javascript disponíveis em: https://developer.mozilla.org/pt-BR/docs/Web/Events
+
+-------------------------------------------
+
+Aula: Estruturas condicionais
+
+Condição 'Switch () case:'
+LEMBRETE: USAR break NO FINAL DE CADA CASE
+
