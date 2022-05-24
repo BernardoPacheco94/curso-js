@@ -1,46 +1,55 @@
 * {
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
+
 }
 
 
-
-body{
- background-color: aquamarine;
- font-family: Arial, Helvetica, sans-serif;
+body {
+    background-color: #1D6A73;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cab8b9;
 }
 
-header{
+h1 {
+    color: #032757;
+
+}
+
+header {
     margin: 20px auto;
     width: 200px;
     text-align: center;
 }
 
-section{
-    background-color: white;
+section {
+    background-color: #175073;
     width: 400px;
-    height: 350px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.226);
+    padding: 10px;
+    font-weight: bold;
 }
 
-#msg{   
+
+#btn {
     text-align: center;
-    padding: 20px;    
 }
 
-#img{
-    width: 250px;
-    height: 250px;
+#titulo {
+    text-align: center;
+    padding: 20px;
+}
+
+#img {
     margin: auto;
     border-radius: 250px;
-    background-image: url('../img/manha.jpg');
 }
 
-footer{
+footer {
     margin: 10px auto;
     width: 200px;
     text-align: center;
-}
 
+}
