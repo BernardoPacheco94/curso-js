@@ -3,10 +3,6 @@
     margin: 0px;
 }
 
-:root{
-
-}
-
 body{
  background-color: aquamarine;
  font-family: Arial, Helvetica, sans-serif;
@@ -21,23 +17,20 @@ header{
 section{
     background-color: white;
     width: 400px;
-    height: 350px;
     margin: auto;
     border-radius: 10px;
     box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.226);
+    padding: 10px;
 }
 
-#titulo{   
-    text-align: center;
-    padding: 20px;    
+p{
+    padding: 10px;
 }
 
-#img{
-    background-color: black;
-    width: 250px;
-    height: 250px;
+#btn{
+    width: 60px;
     margin: auto;
-    border-radius: 250px;
+    padding: 10px;
 }
 
 footer{
