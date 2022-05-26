@@ -1,6 +1,7 @@
 function calcular() {
     var num = document.querySelector('input#txt_num')
     var res = document.querySelector('select#res')
+    res.innerHTML=""
 res.style.padding = `5px`
     if (Number(num.value) == "") {
         alert('Informe um número')
