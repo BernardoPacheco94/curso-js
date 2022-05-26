@@ -1,0 +1,47 @@
+
+
+
+body{
+ background-color: aquamarine;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    margin: 20px auto;
+    width: 200px;
+    text-align: center;
+}
+
+section{
+    background-color: white;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 4px 3px 4px rgba(0, 0, 0, 0.226);
+    padding: 10px; 
+}
+
+input{
+    margin: 5px 0px 15px 3px;
+}
+
+label{
+    margin-left: 10px;
+}
+
+#div_btn{
+    margin: 10px auto;
+    width: 50px;
+}
+
+#btn_contar{
+    margin: auto;
+}
+
+footer{
+    margin: 10px auto;
+    width: 200px;
+    text-align: center;
+
+}
+
