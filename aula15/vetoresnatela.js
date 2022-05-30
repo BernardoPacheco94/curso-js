@@ -12,4 +12,3 @@ console.log('')
 console.log('Buscando valores:')
 let indice = vetor.indexOf(8)
 console.log(`O valor 8 está na posição ${indice}: `)
-

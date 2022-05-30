@@ -120,4 +120,10 @@ Para verificar o tamanho do array: num.length
 Ordenando o array: num.sort
 Buscando valores: num.indexOf(3)// Índice (posição) do valor 3
 
+-------------------------------------------
+
+Aula Funções:
+
+!ESTUDAR FUNÇÃO ARROW!
+
 
