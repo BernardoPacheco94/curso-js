@@ -111,3 +111,13 @@ Aula: Estruturas condicionais
 Condição 'Switch () case:'
 LEMBRETE: USAR break NO FINAL DE CADA CASE
 
+-------------------------------------------
+
+Vetores:
+Declaração de vetores: let num = [] 
+Para adicionar valores no array: num.push(8)
+Para verificar o tamanho do array: num.length
+Ordenando o array: num.sort
+Buscando valores: num.indexOf(3)// Índice (posição) do valor 3
+
+
