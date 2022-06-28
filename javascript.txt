@@ -126,4 +126,11 @@ Aula Funções:
 
 !ESTUDAR FUNÇÃO ARROW!
 
+-------------------------------------------
+Arrow functions, callback, funções anonimas, IIFE, javascript funcional
+objetos, modularização, expressoões regulares, JSON, Ajax (carregamento de pagina), NodeJs, jquery, angular
+
+-------------------------------------------
+
+Função Arrow:
 
