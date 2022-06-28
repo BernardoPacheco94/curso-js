@@ -133,4 +133,6 @@ objetos, modularização, expressoões regulares, JSON, Ajax (carregamento de pa
 -------------------------------------------
 
 Função Arrow:
+A arrow function é a representação de uma função no código, geralmente usada dentro de uma outra função.
 
+a função arrow permite dispensar a expressão return, pois já espera um retorno. Caso seja apenas um parametro, também não preciso usar chaves
