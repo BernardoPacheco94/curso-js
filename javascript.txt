@@ -144,7 +144,7 @@ Ler que, depois do arrow é uma função
 -------------------------------------------
 
 Callback:
-É um tipo de função que vai retornar alguma coisa, geralmente o primeiro parâmetro é um erro (err, 2o paramentro...).
+É um tipo de função que vai retornar alguma coisa, ele não "trava" o código na linha da função, vai executando as próximas linhas enquanto aguarda o retorno, geralmente o primeiro parâmetro é um erro (err, 2o paramentro...).
 Ex leitura de arquivo:
 function callback (err, contents){ // callback que retorna o conteudo do arquivo ou um erro de leitura
 	console.log(err, contents)
@@ -157,7 +157,7 @@ fs.readflie ('/arquivo.txt', callback) // executa a leitura do arquivo e recebe 
 função Promise
 
 A Promise na verdade é uma classe, será instanciada quando for usada:
-variavel = new Promise() ela retorna dois valores Promise (resolve, reject). Quando há promise existe o '.then' 
+variavel = new Promise() ela retorna dois valores Promise (resolve, reject). Quando há promise existe o '.then'
 
 -------------------------------------------
 

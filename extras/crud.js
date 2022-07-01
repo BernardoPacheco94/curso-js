@@ -52,5 +52,5 @@ function apagaPost (id){
 }
 
 console.log(pegaPostagem())
-apagaPost(3)
+apagaPost(1)
 console.log(pegaPostagem())
