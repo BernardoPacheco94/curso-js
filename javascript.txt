@@ -122,6 +122,14 @@ Buscando valores: num.indexOf(3)// Índice (posição) do valor 3
 
 -------------------------------------------
 
+Argumento x Parametro
+
+O parametro é o que eu defino quando vou criar um método, o que será passado para o metodo/função.
+
+Quando vou utilizar o método eu passo os argumentos. (ou seja, tudo que eu passo quando vou usar a função é argumento)
+
+-------------------------------------------
+
 Aula Funções:
 
 !ESTUDAR FUNÇÃO ARROW!

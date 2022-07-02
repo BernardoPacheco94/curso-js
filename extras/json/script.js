@@ -1,4 +1,4 @@
-const objeto = [{
+const objeto = [{// objeto javascript
 
     "nome": "bernardo",
     "idade": 27,
