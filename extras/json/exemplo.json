@@ -1,0 +1,13 @@
+{
+    "nome": "bernardo",
+    "idade": 27,
+    "trabalhando": true,
+    "hobbies" : [1, "zarabatana", false],
+
+    "detalhes_trabalho" : {
+        "empresa" : "sistemas e informacao",
+        "cargo" : "suporte"
+    },
+    
+    "estado_civil" : "bauduco"
+}
