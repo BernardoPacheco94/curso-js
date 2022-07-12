@@ -29,12 +29,10 @@ function verificar() {
         if (op.toLowerCase() == 'java'){
             alert('Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems.')
             linguagens.push('Java')
-            alert('Java adicionado a sua lista de linguagens')
             sequencia()
         } else{
             alert('C# é uma linguagem de programação, multiparadigma, de tipagem forte, desenvolvida pela Microsoft como parte da plataforma .NET. A sua sintaxe orientada a objetos foi baseada no C++ mas inclui muitas influências de outras linguagens de programação, como Object Pascal e, principalmente, Java.')
             linguagens.push('C#')
-            alert('C# adicionado a sua lista de linguagens')
             sequencia()
         }
     }
@@ -63,8 +61,9 @@ function sequencia () {
         
         paragrafo = document.getElementById('paragrafo')
         
-        for (i=0; i<=linguagens.length; i++) {
-        paragrafo.innerHTML += `${linguagens[i]}\n`       
+        paragrafo.innerHTML = `Linguagens:`
+        for (i=0; i<linguagens.length; i++) {
+        paragrafo.innerHTML += `<br>${linguagens[i]}`       
         }
     }    
 }
