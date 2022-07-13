@@ -19,6 +19,10 @@ function exibeCategorias(array){//formata exibição das categorias
 
 console.log(exibeCategorias(categorias))//exibindo categorias formadas
 
-console.log(Object.values(lista_compras))
+console.log(Object.values(lista_compras.frutas))
+
+lista_compras.laticineos.map((item)=>{
+    console.log(item)
+})
 
 
