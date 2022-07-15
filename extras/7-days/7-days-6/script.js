@@ -1,3 +1,4 @@
+div = document.querySelector('#retorno_lista')
 let lista_compras = {
     'laticineos': [],
     'carnes': [],
@@ -8,6 +9,8 @@ let lista_compras = {
 
 adc_comida = 's'
 
+
+//Inclusao dos produtos nas listas
 function iniciar() {
     while (adc_comida.toLowerCase() == 's') {
         adc_comida = prompt('Deseja adicionar comida a sua lista de compras?\n Pressione (s) para adicionar ou qualquer outra tecla para sair')
@@ -30,12 +33,35 @@ function iniciar() {
 
     }
     alert('Lista encerrada!')
+
+
+
+
+
     //criando a lista no html
 
-    div = document.querySelector('#retorno_lista')
-    
-    Object.keys(lista_compras).map((cat) => {
-        select = document.querySelector('#select')
-         
-    })
+
+    array_categorias = Object.keys(lista_compras)
+
+    for (i = 0; i < array_categorias.length; i++) {//percorre as chaves da lista de compras
+        select = document.createElement('select')
+        select.setAttribute("size", "10")
+        array_produtos = Object.values(lista_compras[`${array_categorias[i]}`])//coloca os valores de cara indice num array
+
+
+        array_produtos.map((prod) => {//percorre o array de comidas, incluindo como option no html
+            option = new Option
+            option.text = `${prod}`
+            select.appendChild(option)
+        })
+
+
+        div.innerHTML += `
+        <h1>${array_categorias[i]}</h1> <br>
+        ${select.outerHTML} <br>`
+
+    }
+
 }
+
+
