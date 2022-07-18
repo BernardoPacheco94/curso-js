@@ -1,4 +1,9 @@
 div = document.querySelector('#retorno_lista')
+input_comida = document.getElementById('input_comida')
+form = document.querySelector('#form')
+div_radio = document.querySelector('#div_radio')
+
+
 let lista_compras = {
     'laticineos': [],
     'carnes': [],
@@ -7,46 +12,59 @@ let lista_compras = {
     'graos': []
 }
 
-adc_comida = 's'
+function carregar(){
+    //Cria as entradas de dados no HTML...
+    div_radio.innerHTML = ''
+    array_categorias = Object.keys(lista_compras)
+
+    array_categorias.map((item) => {
+        input = document.createElement('input')
+        input.setAttribute("type", "radio")
+        input.setAttribute("name", "lista_compras")
+        input.setAttribute("id", `${item}_input`)
+        input.setAttribute("value", `${item}`)
+
+        label = document.createElement('label')
+        label.setAttribute("for", `${item}_input`)
+
+        label.innerHTML = ` <br>${item}`
+        div_radio.appendChild(label)
+        label.appendChild(input)
+    })
+}
 
 
 //Inclusao dos produtos nas listas
 function iniciar() {
-    while (adc_comida.toLowerCase() == 's') {
-        adc_comida = prompt('Deseja adicionar comida a sua lista de compras?\n Pressione (s) para adicionar ou qualquer outra tecla para sair')
+    radios = document.getElementsByName('lista_compras')
+    pegaRadio()
 
-        if (adc_comida.toLowerCase() == 's') {//se a resposta for s
-            comida = prompt('Informe qual seria a comida:')//solicita comida
-            categoria = prompt(`Em qual categoria ${comida} se encaixa? ${JSON.stringify(Object.keys(lista_compras))}`)//solicita categoria
+    input_comida = document.getElementById('input_comida')
+    lista_compras[`${pegaRadio()}`].push(input_comida.value)
+    exibeListas()
+}
 
-
-            try {//tenta incluir nas categorias existentes
-                lista_compras[`${categoria}`].push(comida)
-            } catch (error) {//se nao conseguir, verifica se quer criar
-                criar_categoria = prompt(`categoria não encontrada, deseja criar categoria "${categoria}"? (s/n)`)
-                if (criar_categoria.toLowerCase() == 's') {
-                    lista_compras[categoria.toLowerCase()] = [comida]
-                }
-            }
+//Retorna o rádio que foi selecionado
+function pegaRadio (){
+    for (radio of radios){
+        if (radio.checked){
+            return radio.value
         }
-
-
     }
-    alert('Lista encerrada!')
+}
 
 
 
 
-
-    //criando a lista no html
-
+function exibeListas() {
+    div.innerHTML = ''
 
     array_categorias = Object.keys(lista_compras)
 
     for (i = 0; i < array_categorias.length; i++) {//percorre as chaves da lista de compras
         select = document.createElement('select')
         select.setAttribute("size", "10")
-        array_produtos = Object.values(lista_compras[`${array_categorias[i]}`])//coloca os valores de cara indice num array
+        array_produtos = Object.values(lista_compras[`${array_categorias[i]}`])//coloca os valores de cada indice num array
 
 
         array_produtos.map((prod) => {//percorre o array de comidas, incluindo como option no html
@@ -61,7 +79,9 @@ function iniciar() {
         ${select.outerHTML} <br>`
 
     }
-
 }
 
-
+function novaCategoria(){
+    lista_compras[`${input_comida.value}`] = []
+    carregar()
+}
