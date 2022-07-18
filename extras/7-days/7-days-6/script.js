@@ -23,9 +23,10 @@ function carregar(){
         input.setAttribute("name", "lista_compras")
         input.setAttribute("id", `${item}_input`)
         input.setAttribute("value", `${item}`)
-
+        
         label = document.createElement('label')
         label.setAttribute("for", `${item}_input`)
+        
 
         label.innerHTML = ` <br>${item}`
         div_radio.appendChild(label)
@@ -55,7 +56,6 @@ function pegaRadio (){
 
 
 
-
 function exibeListas() {
     div.innerHTML = ''
 
@@ -74,9 +74,14 @@ function exibeListas() {
         })
 
 
+        btn_remover_selecionado = document.createElement('button')
+        btn_remover_selecionado.setAttribute("onclick", "removerItem()")
+        btn_remover_selecionado.innerText = 'Remover Item'
         div.innerHTML += `
         <h1>${array_categorias[i]}</h1> <br>
-        ${select.outerHTML} <br>`
+        ${select.outerHTML} <br>
+        ${btn_remover_selecionado.outerHTML}
+        `
 
     }
 }
@@ -84,4 +89,8 @@ function exibeListas() {
 function novaCategoria(){
     lista_compras[`${input_comida.value}`] = []
     carregar()
+}
+
+function removerItem(){
+    alert('IHUUUUUUUUU')
 }
