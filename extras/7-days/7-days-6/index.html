@@ -9,51 +9,45 @@
         select {
             width: 100px;
         }
-
     </style>
     <title>Dia 6</title>
 </head>
 
 <body onload="carregar()">
     <h1>Desafio dia 6</h1>
-    <p>Então hoje, para facilitar a sua ida ao supermercado, você deve criar um programa em Javascript que perguntará se
-        você deseja adicionar uma comida na sua lista de compras, e você deve poder responder com sim ou não.</p>
+    <p>Sabe o programinha que você criou ontem para montar a sua própria lista de compras? Hoje o seu desafio é deixar
+        ele ainda mais legal!</p>
 
-    <p>Em seguida, ele perguntará qual comida você deseja inserir, e você digitará o nome dela, como por exemplo batata.
-    </p>
+    <p>Você já viu como trabalhar com arrays de forma simples, adicionando itens na sua lista de compras.</p>
 
-    <p>Depois, ele deverá perguntar em qual categoria essa comida se encaixa, com algumas opções já pré-definidas, como
-        frutas, laticínios, congelados, doces e o que mais você achar interessante. Assim, você poderá separar tudo no
-        seu devido grupo.</p>
+    <p>Outra operação muito comum é a de remoção de itens da lista e, por isso, é muito importante que você saiba como
+        fazer isso.</p>
 
-    <p>Por fim, caso você não queira mais adicionar nada na lista de compras e responder não na primeira pergunta, ele
-        irá exibir uma lista com todos os itens agrupados, da seguinte forma:</p>
+    <p>Pensando a fundo, existem N maneiras de deletar um item de uma lista. Você pode remover o primeiro item, o
+        último, ou qualquer um do meio da lista. Cada uma dessas operações tem o seu próprio método dentro das
+        documentações dos arrays em Javascript. Vamos falar mais sobre esses métodos na seção "Dicas".</p>
 
-    <p>
-        Caso você adicione na sua lista: <br>
-        banana, leite em pó, tomate, leite vegetal, chiclete, bala de ursinho, maçã, uva, abacate e leite de vaca
-    </p>
+    <p>Você deverá criar a opção de remover algum item da lista, que será exibida junto à pergunta de “você deseja
+        adicionar uma comida na lista de compras”?</p>
 
-    <p>O programa deverá imprimir, por exemplo:</p>
+    <p>A partir daí, caso a pessoa escolha essa opção, o programa irá imprimir os elementos presentes na lista atual, e
+        a pessoa deverá escrever qual deles deseja remover.</p>
 
-    <p>
-        Lista de compras:
-        Frutas: banana, tomate, maçã, uva, abacate
-        Laticínios: leite vegetal, leite de vaca, leite em pó
-        Congelados:
-        Doces: chiclete e bala de ursinho
-    </p>
+    <p>Depois disso, o programa irá remover o elemento da lista e imprimir a confirmação de que o item realmente não
+        está mais lá.</p>
+
+
     <hr>
 
-    
-    <form id="form">    
+
+    <form id="form">
         <input type="text" name="input_comida" id="input_comida" placeholder="Comida/Categoria">
         <div id="div_radio">
 
         </div>
     </form>
-    
-    <button onclick="iniciar()">Adicionar</button>
+
+    <button onclick="adcComida()">Adicionar Comida</button>
     <button onclick="novaCategoria()">Nova Categoria</button>
 
     <div id="retorno_lista"></div>
