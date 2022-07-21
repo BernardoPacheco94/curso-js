@@ -130,11 +130,8 @@ Quando vou utilizar o método eu passo os argumentos. (ou seja, tudo que eu pass
 
 -------------------------------------------
 
-Aula Funções:
+Conteúdos extras 
 
-!ESTUDAR FUNÇÃO ARROW!
-
--------------------------------------------
 Arrow functions, callback, funções anonimas, IIFE, javascript funcional
 objetos, modularização, expressoões regulares, JSON, Ajax (carregamento de pagina), NodeJs, jquery, angular
 
@@ -172,3 +169,28 @@ variavel = new Promise() ela retorna dois valores Promise (resolve, reject). Qua
 async/await
 
 Forma melhorada de enxergar a promise 
+
+-------------------------------------------
+
+jquery
+Serve para facilitar a manipulação dos elementos DOM. Exemplo de sintaxe $ (#id_do_elemtno){função()}
+
+-------------------------------------------
+
+Expressões regulares
+
+Usado para criar padrões de caracteres através de metacaracteres. Sendo possível criar validações (data, cpf), replaces, máscaras...
+
+Ex: 
+Máscara de DDD
+^(\([0-9]{2})|[0-9]{2})$
+
+^$ - Delimitam início e fim da expressão
+() - representam um grupo
+| - na expressão há 2 tipos de ddd, um com e outro sem parentesis, o pipe os separa, seria o or
+\()\ - indica que os parentesis são literais, fazem parte da expressao, não sendo meta
+[0-9] - numero de 0 a 9
+{2} - minimo 2 a máximo 2 caracteres
+
+-------------------------------------------
+
