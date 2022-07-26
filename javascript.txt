@@ -173,7 +173,8 @@ Forma melhorada de enxergar a promise
 -------------------------------------------
 
 jquery
-Serve para facilitar a manipulação dos elementos DOM. Exemplo de sintaxe $ (#id_do_elemtno){função()}
+Serve para facilitar a manipulação dos elementos DOM. Exemplo de sintaxe 
+$(#id_do_elemtno){função()}
 
 -------------------------------------------
 
@@ -193,4 +194,20 @@ Máscara de DDD
 {2} - minimo 2 a máximo 2 caracteres
 
 -------------------------------------------
+
+Ajax:
+
+Asynchronous Javascript and XML: Usado para fazer requisições via xml-http sem precisar recarregar a página.
+
+Podendo acessar arquivos, fazer modificações na página.
+
+httpRequest.open("GET", "json.json") - método open informa o método de envio e a url do arquivo/servidor a ser acessado
+httpRequest.send() - envia a solicitação ao servidor
+readystate - informa o estado do cliente em relação a requisição. retorna os valores (0, 1, 2, 3, 4)
+status - retorna o status http, valores (200, 404, etc...)
+responseText - retorna um texto recebido do servidor 
+responseType - define o tipo de dado que o ajax vai receber
+
+-------------------------------------------
+
 

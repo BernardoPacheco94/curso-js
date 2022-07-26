@@ -4,8 +4,8 @@ let lista_compras = {
 }
 
 
-lista_compras.matinais = ['pao','presunto']
-lista_compras.frutas.push('maçã', 'banuina')
+ lista_compras.matinais = ['pao','presunto']
+ lista_compras.frutas.push('maçã', 'banuina')
 
 categorias = Object.keys(lista_compras)//verifica chaves do objeto
 
