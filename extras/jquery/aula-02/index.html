@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/jquery-3.6.0.js"></script>
+    <title>Document</title>
+</head>
+<body>    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi totam, ad neque eos eligendi quo, vitae, quas hic adipisci praesentium iusto facere alias in provident impedit. Nobis, ipsum? Culpa, cupiditate.</p>
+
+    <p id="teste">Paragrafo de teste</p>
+
+    <p class="p-yellow">Outro parágrado</p>
+
+
+    <script>
+        $(document).ready(function (){
+            $('p').html('Todos os paragrafos alterados com jQuery')
+            $("#teste").html('Alterado o parágrafo com id teste')
+            $(".p-yellow").html('Alterado paragrafo de uma classe')
+        })
+
+    </script>
+</body>
+</html>
